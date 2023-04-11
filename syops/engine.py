@@ -14,7 +14,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from progress.bar import Bar as Bar
-from spikingjelly.clock_driven import surrogate, neuron, functional
+from spikingjelly.activation_based import surrogate, neuron, functional
 
 from .ops import CUSTOM_MODULES_MAPPING, MODULES_MAPPING
 from .utils import syops_to_string, params_to_string
