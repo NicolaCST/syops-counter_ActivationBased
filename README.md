@@ -1,4 +1,4 @@
-# Synaptic OPerations (SyOPs) counter for spiking neural networks
+# Synaptic OPerations (SyOPs) counter for spiking neural networks - SpikingJelly 0.0.0.0.14+ (Activation Based)
 [![Pypi version](https://img.shields.io/pypi/v/syops.svg)](https://pypi.org/project/syops/)
 <!-- [![Build Status](https://travis-ci.com/iCGY96/syops-counter.svg?branch=master)](https://travis-ci.com/iCGY96/syops-counter) -->
 
@@ -62,8 +62,8 @@ with torch.cuda.device(0):
 			surrogate_function=surrogate.ATan(), detach_reset=True)
     ops, params = get_model_complexity_info(net, (3, 224, 224), dataloader, as_strings=True,
                                             print_per_layer_stat=True, verbose=True)
-    print('{:<30}  {:<8}'.format('Computational complexity ACs:', acs))
-    print('{:<30}  {:<8}'.format('Computational complexity MACs:', macs))
+    print('{:<30}  {:<8}'.format('Computational complexity ACs:', ops[1])) #acs
+    print('{:<30}  {:<8}'.format('Computational complexity MACs:', ops[2])) #macs
     print('{:<30}  {:<8}'.format('Number of parameters: ', params))
 ```
 
