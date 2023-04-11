@@ -1,6 +1,8 @@
-# Synaptic OPerations (SyOPs) counter for spiking neural networks - SpikingJelly 0.0.0.0.14+ (Activation Based)
+# Synaptic OPerations (SyOPs) counter for spiking neural networks
 [![Pypi version](https://img.shields.io/pypi/v/syops.svg)](https://pypi.org/project/syops/)
 <!-- [![Build Status](https://travis-ci.com/iCGY96/syops-counter.svg?branch=master)](https://travis-ci.com/iCGY96/syops-counter) -->
+
+## SpikingJelly 0.0.0.0.14+ (Activation Based)
 
 This script is designed to compute the theoretical amount of synaptic operations 
 in spiking neural networks, including accumulated (AC) and multiply-accumulate (MAC) operations. 
